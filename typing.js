@@ -35,15 +35,8 @@ function moar(text, target, index) {
   }
 }
 
-var req = new XMLHttpRequest();
-req.open("GET", "/ip", false);
-req.send(null);
-var ip = req.responseText
-
-req = new XMLHttpRequest();
-req.open("GET", "/tor", false);
-req.send(null);
-var tor = ' ' + req.responseText
+var ip = 'unknown';
+var tor = '';
 
 var text_so_far = ''
 var typing = ['<span class="dim">Last login ' + (new Date()) + ' from ' + ip + tor + '</span>']
