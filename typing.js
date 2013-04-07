@@ -38,8 +38,8 @@ function moar(text, target, index) {
 var ip = 'unknown';
 var tor = '';
 
-var text_so_far = ''
-var typing = ['<span class="dim">Last login ' + (new Date()) + ' from ' + ip + tor + '</span>']
+var text_so_far = '';
+var typing = ['<span class="dim">Last login ' + (new Date()) + ' from ' + ip + tor + '</span>'];
 
 function type_one_line(target) {
   line = typing[0];
